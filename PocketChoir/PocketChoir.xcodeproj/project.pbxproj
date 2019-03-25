@@ -15,6 +15,9 @@
 		63DB817522383C0F0012C9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DB817322383C0F0012C9B5 /* LaunchScreen.storyboard */; };
 		63DB818022383C0F0012C9B5 /* PocketChoirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB817F22383C0F0012C9B5 /* PocketChoirTests.swift */; };
 		63DB818B22383C0F0012C9B5 /* PocketChoirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB818A22383C0F0012C9B5 /* PocketChoirUITests.swift */; };
+		6B0F25C42248887C00CA323A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F25C22248887B00CA323A /* Montserrat-Bold.ttf */; };
+		6B0F25C52248887C00CA323A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F25C32248887C00CA323A /* Montserrat-Medium.ttf */; };
+		6B0F25C8224888AA00CA323A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F25C7224888AA00CA323A /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		63DB816922383C0F0012C9B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63DB816C22383C0F0012C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63DB816F22383C0F0012C9B5 /* PocketChoir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketChoir.xcdatamodel; sourceTree = "<group>"; };
-		63DB817122383C0F0012C9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63DB817122383C0F0012C9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/deryk/Documents/College/4Senior/SoftwareEngineering/Pocket Choir/GitHub/pocket-choir/PocketChoir/PocketChoir/Assets.xcassets"; sourceTree = "<absolute>"; };
 		63DB817422383C0F0012C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DB817622383C0F0012C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63DB817B22383C0F0012C9B5 /* PocketChoirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketChoirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +52,10 @@
 		63DB818622383C0F0012C9B5 /* PocketChoirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketChoirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB818A22383C0F0012C9B5 /* PocketChoirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketChoirUITests.swift; sourceTree = "<group>"; };
 		63DB818C22383C0F0012C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B0F25C122485DC500CA323A /* PocketChoir.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketChoir.entitlements; sourceTree = "<group>"; };
+		6B0F25C22248887B00CA323A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		6B0F25C32248887C00CA323A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		6B0F25C7224888AA00CA323A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,7 @@
 		63DB816622383C0F0012C9B5 /* PocketChoir */ = {
 			isa = PBXGroup;
 			children = (
+				6B0F25C122485DC500CA323A /* PocketChoir.entitlements */,
 				63DB816722383C0F0012C9B5 /* AppDelegate.swift */,
 				63DB816922383C0F0012C9B5 /* ViewController.swift */,
 				63DB816B22383C0F0012C9B5 /* Main.storyboard */,
@@ -106,6 +114,7 @@
 				63DB817322383C0F0012C9B5 /* LaunchScreen.storyboard */,
 				63DB817622383C0F0012C9B5 /* Info.plist */,
 				63DB816E22383C0F0012C9B5 /* PocketChoir.xcdatamodeld */,
+				6B0F25C62248888400CA323A /* Fonts */,
 			);
 			path = PocketChoir;
 			sourceTree = "<group>";
@@ -126,6 +135,16 @@
 				63DB818C22383C0F0012C9B5 /* Info.plist */,
 			);
 			path = PocketChoirUITests;
+			sourceTree = "<group>";
+		};
+		6B0F25C62248888400CA323A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6B0F25C22248887B00CA323A /* Montserrat-Bold.ttf */,
+				6B0F25C32248887C00CA323A /* Montserrat-Medium.ttf */,
+				6B0F25C7224888AA00CA323A /* Roboto-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +210,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Pocket Choir";
 				TargetAttributes = {
 					63DB816322383C0F0012C9B5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					63DB817A22383C0F0012C9B5 = {
 						CreatedOnToolsVersion = 9.2;
@@ -235,6 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0F25C42248887C00CA323A /* Montserrat-Bold.ttf in Resources */,
+				6B0F25C52248887C00CA323A /* Montserrat-Medium.ttf in Resources */,
+				6B0F25C8224888AA00CA323A /* Roboto-Bold.ttf in Resources */,
 				63DB817522383C0F0012C9B5 /* LaunchScreen.storyboard in Resources */,
 				63DB817222383C0F0012C9B5 /* Assets.xcassets in Resources */,
 				63DB816D22383C0F0012C9B5 /* Main.storyboard in Resources */,
@@ -333,6 +360,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,6 +368,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -390,6 +419,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -397,6 +427,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

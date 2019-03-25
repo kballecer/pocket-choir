@@ -1,24 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PocketChoir" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-0x-qkf">
+                                <rect key="frame" x="104" y="0.0" width="104" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-ZC-ovT">
+                                        <rect key="frame" x="22" y="0.0" width="60" height="103.66666666666667"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgb-tQ-QBh">
+                                        <rect key="frame" x="29.666666666666657" y="103.66666666666669" width="45" height="103.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-eo-780">
+                                        <rect key="frame" x="29.333333333333346" y="206.99999999999997" width="45.333333333333343" height="103.66666666666666"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5E-Jf-hZL">
+                                        <rect key="frame" x="37" y="310.66666666666669" width="30.333333333333329" height="103.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HYJ-ac-dCW">
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="414"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColoredLogo" translatesAutoresizingMaskIntoConstraints="NO" id="m5h-lC-fsX">
+                                        <rect key="frame" x="8.6666666666666643" y="0.0" width="87" height="103.66666666666667"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkW-LQ-tig">
+                                        <rect key="frame" x="33.333333333333329" y="103.66666666666669" width="37.333333333333329" height="103.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA2-wo-4Pw">
+                                        <rect key="frame" x="25.333333333333332" y="206.99999999999997" width="53.666666666666671" height="103.66666666666666"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-IU-YEu">
+                                        <rect key="frame" x="43.666666666666664" y="310.66666666666669" width="16.666666666666664" height="103.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
+                                        <color key="textColor" name="Lavendar Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aVl-Lz-CmE">
+                                <rect key="frame" x="0.0" y="0.0" width="733" height="414"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-NI-tXd">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="414"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="MeJ-aV-Gks">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="rrn-un-vDs">
+                                                <rect key="frame" x="0.0" y="103" width="104" height="104"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="XJI-uz-mKt">
+                                                <rect key="frame" x="0.0" y="206" width="104" height="104"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="ILc-Bf-upG">
+                                                <rect key="frame" x="0.0" y="309" width="104" height="105"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9sG-nF-pjz">
+                                        <rect key="frame" x="103" y="0.0" width="104" height="414"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="w5H-7P-cGm">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="44J-rw-OBd">
+                                                <rect key="frame" x="0.0" y="103" width="104" height="104"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="jRp-Bk-wD0">
+                                                <rect key="frame" x="0.0" y="206" width="104" height="104"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="BigButtonNoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="Cwj-Cu-RNz">
+                                                <rect key="frame" x="0.0" y="309" width="104" height="105"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-Yk-ADE">
+                                        <rect key="frame" x="206" y="0.0" width="527" height="414"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Button" translatesAutoresizingMaskIntoConstraints="NO" id="TEh-zF-olG">
+                                                <rect key="frame" x="0.0" y="0.0" width="527" height="208"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" insetsLayoutMarginsFromSafeArea="NO" image="Piano" translatesAutoresizingMaskIntoConstraints="NO" id="H4A-iF-yiy">
+                                                <rect key="frame" x="0.0" y="208" width="527" height="206"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980392156865" green="0.28627450980392155" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aVl-Lz-CmE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="34L-yq-BXj"/>
+                            <constraint firstItem="aVl-Lz-CmE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3bg-pa-0dy"/>
+                            <constraint firstItem="fJG-0x-qkf" firstAttribute="leading" secondItem="HYJ-ac-dCW" secondAttribute="trailing" id="7eu-d8-AaO"/>
+                            <constraint firstItem="fJG-0x-qkf" firstAttribute="height" secondItem="HYJ-ac-dCW" secondAttribute="height" id="C7A-H9-91S"/>
+                            <constraint firstItem="fJG-0x-qkf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="FJ0-NT-Omt"/>
+                            <constraint firstItem="aVl-Lz-CmE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FKU-Pp-5qZ"/>
+                            <constraint firstItem="HYJ-ac-dCW" firstAttribute="trailing" secondItem="MeJ-aV-Gks" secondAttribute="trailing" id="aZM-vu-iY0"/>
+                            <constraint firstItem="fJG-0x-qkf" firstAttribute="width" secondItem="HYJ-ac-dCW" secondAttribute="width" id="dgx-yA-m0X"/>
+                            <constraint firstItem="HYJ-ac-dCW" firstAttribute="leading" secondItem="rxW-NI-tXd" secondAttribute="leading" id="mWM-Ow-Cqx"/>
+                            <constraint firstAttribute="bottom" secondItem="HYJ-ac-dCW" secondAttribute="bottom" id="oJ4-9E-HUC"/>
+                            <constraint firstItem="HYJ-ac-dCW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vFX-KQ-kin"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="22.826086956521742" y="46.376811594202906"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BigButtonNoShadow" width="104" height="104"/>
+        <image name="ColoredLogo" width="87" height="87"/>
+        <image name="Key Button" width="87" height="87"/>
+        <image name="Piano" width="527" height="206"/>
+        <namedColor name="Lavendar Gray">
+            <color red="0.77254901960784317" green="0.76470588235294112" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
