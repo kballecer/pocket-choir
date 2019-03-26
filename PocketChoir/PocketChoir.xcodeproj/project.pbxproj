@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63AFA72D2249ADBE001F0DDC /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72A2249ADB5001F0DDC /* AudioKit.framework */; };
+		63AFA72E2249ADBE001F0DDC /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72A2249ADB5001F0DDC /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63AFA7312249ADBE001F0DDC /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72C2249ADB5001F0DDC /* AudioKitUI.framework */; };
+		63AFA7322249ADBE001F0DDC /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72C2249ADB5001F0DDC /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63DB816822383C0F0012C9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB816722383C0F0012C9B5 /* AppDelegate.swift */; };
 		63DB816A22383C0F0012C9B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB816922383C0F0012C9B5 /* ViewController.swift */; };
 		63DB816D22383C0F0012C9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DB816B22383C0F0012C9B5 /* Main.storyboard */; };
@@ -21,6 +25,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		63AFA7292249ADB5001F0DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C42F35001C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		63AFA72B2249ADB5001F0DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA7D07011F4E63C200707706;
+			remoteInfo = AudioKitUI;
+		};
+		63AFA72F2249ADBE001F0DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		63AFA7332249ADBE001F0DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7D07001F4E63C200707706;
+			remoteInfo = AudioKitUI;
+		};
 		63DB817C22383C0F0012C9B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63DB815C22383C0F0012C9B5 /* Project object */;
@@ -37,13 +69,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		63AFA7062249ABAD001F0DDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63AFA7322249ADBE001F0DDC /* AudioKitUI.framework in Embed Frameworks */,
+				63AFA72E2249ADBE001F0DDC /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "PocketChoir/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
 		63DB816422383C0F0012C9B5 /* PocketChoir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChoir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB816722383C0F0012C9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DB816922383C0F0012C9B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63DB816C22383C0F0012C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63DB816F22383C0F0012C9B5 /* PocketChoir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketChoir.xcdatamodel; sourceTree = "<group>"; };
-		63DB817122383C0F0012C9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/deryk/Documents/College/4Senior/SoftwareEngineering/Pocket Choir/GitHub/pocket-choir/PocketChoir/PocketChoir/Assets.xcassets"; sourceTree = "<absolute>"; };
+		63DB817122383C0F0012C9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PocketChoir/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		63DB817422383C0F0012C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DB817622383C0F0012C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63DB817B22383C0F0012C9B5 /* PocketChoirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketChoirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AFA7312249ADBE001F0DDC /* AudioKitUI.framework in Frameworks */,
+				63AFA72D2249ADBE001F0DDC /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +133,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63AFA7252249ADB3001F0DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63AFA72A2249ADB5001F0DDC /* AudioKit.framework */,
+				63AFA72C2249ADB5001F0DDC /* AudioKitUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		63DB815B22383C0F0012C9B5 = {
 			isa = PBXGroup;
 			children = (
+				63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */,
 				63DB816622383C0F0012C9B5 /* PocketChoir */,
 				63DB817E22383C0F0012C9B5 /* PocketChoirTests */,
 				63DB818922383C0F0012C9B5 /* PocketChoirUITests */,
@@ -157,10 +217,13 @@
 				63DB816022383C0F0012C9B5 /* Sources */,
 				63DB816122383C0F0012C9B5 /* Frameworks */,
 				63DB816222383C0F0012C9B5 /* Resources */,
+				63AFA7062249ABAD001F0DDC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63AFA7302249ADBE001F0DDC /* PBXTargetDependency */,
+				63AFA7342249ADBE001F0DDC /* PBXTargetDependency */,
 			);
 			name = PocketChoir;
 			productName = PocketChoir;
@@ -245,6 +308,12 @@
 			mainGroup = 63DB815B22383C0F0012C9B5;
 			productRefGroup = 63DB816522383C0F0012C9B5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63AFA7252249ADB3001F0DDC /* Products */;
+					ProjectRef = 63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				63DB816322383C0F0012C9B5 /* PocketChoir */,
@@ -253,6 +322,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63AFA72A2249ADB5001F0DDC /* AudioKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKit.framework;
+			remoteRef = 63AFA7292249ADB5001F0DDC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63AFA72C2249ADB5001F0DDC /* AudioKitUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKitUI.framework;
+			remoteRef = 63AFA72B2249ADB5001F0DDC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63DB816222383C0F0012C9B5 /* Resources */ = {
@@ -314,6 +400,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		63AFA7302249ADBE001F0DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = 63AFA72F2249ADBE001F0DDC /* PBXContainerItemProxy */;
+		};
+		63AFA7342249ADBE001F0DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKitUI;
+			targetProxy = 63AFA7332249ADBE001F0DDC /* PBXContainerItemProxy */;
+		};
 		63DB817D22383C0F0012C9B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63DB816322383C0F0012C9B5 /* PocketChoir */;
@@ -460,9 +556,14 @@
 		63DB819022383C0F0012C9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5T5S4VKJKD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketChoir/AudioKit-iOS",
+				);
 				INFOPLIST_FILE = PocketChoir/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoir;
@@ -475,9 +576,14 @@
 		63DB819122383C0F0012C9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5T5S4VKJKD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PocketChoir/AudioKit-iOS",
+				);
 				INFOPLIST_FILE = PocketChoir/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoir;
