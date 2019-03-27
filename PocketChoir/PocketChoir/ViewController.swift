@@ -9,11 +9,13 @@
 import UIKit
 import AudioKit
 
+var audioEngine: AudioEngine!
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        audioEngine = AudioEngine()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635D248F2249B25400DCC9A7 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D248E2249B25400DCC9A7 /* AudioEngine.swift */; };
+		635D2492224AC5BA00DCC9A7 /* Harmonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D2491224AC5BA00DCC9A7 /* Harmonizer.swift */; };
 		63AFA72D2249ADBE001F0DDC /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72A2249ADB5001F0DDC /* AudioKit.framework */; };
 		63AFA72E2249ADBE001F0DDC /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72A2249ADB5001F0DDC /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63AFA7312249ADBE001F0DDC /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFA72C2249ADB5001F0DDC /* AudioKitUI.framework */; };
@@ -85,6 +87,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		635D248E2249B25400DCC9A7 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		635D2491224AC5BA00DCC9A7 /* Harmonizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harmonizer.swift; sourceTree = "<group>"; };
 		63AFA7242249ADB3001F0DDC /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "PocketChoir/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
 		63DB816422383C0F0012C9B5 /* PocketChoir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChoir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB816722383C0F0012C9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 				63DB817622383C0F0012C9B5 /* Info.plist */,
 				63DB816E22383C0F0012C9B5 /* PocketChoir.xcdatamodeld */,
 				6B0F25C62248888400CA323A /* Fonts */,
+				635D248E2249B25400DCC9A7 /* AudioEngine.swift */,
+				635D2491224AC5BA00DCC9A7 /* Harmonizer.swift */,
 			);
 			path = PocketChoir;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				TargetAttributes = {
 					63DB816322383C0F0012C9B5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
@@ -287,11 +294,13 @@
 					};
 					63DB817A22383C0F0012C9B5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 63DB816322383C0F0012C9B5;
 					};
 					63DB818522383C0F0012C9B5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 63DB816322383C0F0012C9B5;
 					};
@@ -376,6 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DB816A22383C0F0012C9B5 /* ViewController.swift in Sources */,
+				635D2492224AC5BA00DCC9A7 /* Harmonizer.swift in Sources */,
+				635D248F2249B25400DCC9A7 /* AudioEngine.swift in Sources */,
 				63DB816822383C0F0012C9B5 /* AppDelegate.swift in Sources */,
 				63DB817022383C0F0012C9B5 /* PocketChoir.xcdatamodeld in Sources */,
 			);
@@ -566,9 +577,10 @@
 				);
 				INFOPLIST_FILE = PocketChoir/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -586,9 +598,10 @@
 				);
 				INFOPLIST_FILE = PocketChoir/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -603,7 +616,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoirTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketChoir.app/PocketChoir";
 			};
@@ -619,7 +632,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoirTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketChoir.app/PocketChoir";
 			};
@@ -634,7 +647,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoirUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = PocketChoir;
 			};
@@ -649,7 +662,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = attempt.PocketChoirUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = PocketChoir;
 			};
