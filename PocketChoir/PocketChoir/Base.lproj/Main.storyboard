@@ -349,6 +349,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fiveChordButton" destination="mkW-LQ-tig" id="9Pd-0V-3om"/>
+                        <outlet property="fourChordButton" destination="KA2-wo-4Pw" id="Eed-WX-3Xy"/>
+                        <outlet property="oneChordButton" destination="XRh-IU-YEu" id="fWB-Fy-oeF"/>
+                        <outlet property="sevenChordButton" destination="BwM-ZC-ovT" id="GIj-gF-39j"/>
+                        <outlet property="sixChordButton" destination="lgb-tQ-QBh" id="77S-0U-u6O"/>
+                        <outlet property="threeChordButton" destination="cb4-eo-780" id="rj0-v4-Gbm"/>
+                        <outlet property="twoChordButton" destination="U5E-Jf-hZL" id="kqj-P2-4Ze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
