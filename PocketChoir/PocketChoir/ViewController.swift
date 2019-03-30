@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sevenChordButton: UILabel!
     
     
+    @IBOutlet weak var reverbOn: UIButton!
+    @IBOutlet weak var reverbOff: UIButton!
     @IBOutlet weak var cKey: UIImageView!
     @IBOutlet weak var cSharpKey: UIImageView!
     @IBOutlet weak var dKey: UIImageView!
@@ -116,8 +118,16 @@ class ViewController: UIViewController {
         let bTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.bPressed))
         bKey.isUserInteractionEnabled = true
         bKey.addGestureRecognizer(bTap)
-        
     }
+    
+    @IBAction func reverbOnTap(_ sender: Any) {
+        reverbOnPressed()
+    }
+    
+    @IBAction func reverbOffTap(_ sender: Any) {
+        reverbOffPressed()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -217,6 +227,14 @@ class ViewController: UIViewController {
     @objc func bPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(11)
         print("b")
+    }
+    
+    @objc func reverbOnPressed() {
+        audioEngine.reverb_fbUpdate(8.2)
+    }
+    
+    @objc func reverbOffPressed() {
+        audioEngine.reverb_fbUpdate(0)
     }
 }
 

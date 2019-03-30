@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -70,34 +70,51 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tt5-O3-YEU" userLabel="Effects Stack">
                                                 <rect key="frame" x="0.0" y="0.0" width="530" height="207"/>
                                                 <subviews>
-                                                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Button" highlightedImage="Key Button Highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="TEh-zF-olG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="530" height="207"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs8-Le-Oid">
+                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="207"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="      Reverb Off">
+                                                            <color key="titleColor" name="Cadet Gray"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reverbOffTap:" destination="BYZ-38-t0r" eventType="touchDown" id="ehL-U3-uzP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-z1-xxl">
+                                                        <rect key="frame" x="139" y="0.0" width="391" height="207"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                        <state key="normal" title="Reverb On">
+                                                            <color key="titleColor" name="Cadet Gray"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="reverbOnTap:" destination="BYZ-38-t0r" eventType="touchDown" id="Is5-R0-P38"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-aE-maK" userLabel="White Key Stack">
                                                 <rect key="frame" x="0.0" y="207" width="530" height="207"/>
                                                 <subviews>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-gk-QkX">
-                                                        <rect key="frame" x="0.0" y="1" width="71.333333333333329" height="206"/>
+                                                        <rect key="frame" x="0.0" y="1" width="71.333333333333329" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-54-Z8V">
-                                                        <rect key="frame" x="76.333333333333314" y="1" width="71.666666666666686" height="206"/>
+                                                        <rect key="frame" x="76.333333333333314" y="1" width="71.666666666666686" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-6C-PUo">
-                                                        <rect key="frame" x="153" y="1" width="71.333333333333314" height="206"/>
+                                                        <rect key="frame" x="153" y="1" width="71.333333333333314" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Uv0-Dp-DZS">
-                                                        <rect key="frame" x="229.33333333333334" y="1" width="71.333333333333343" height="206"/>
+                                                        <rect key="frame" x="229.33333333333334" y="1" width="71.333333333333343" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-0b-hkN">
-                                                        <rect key="frame" x="305.66666666666669" y="1" width="71.333333333333314" height="206"/>
+                                                        <rect key="frame" x="305.66666666666669" y="1" width="71.333333333333314" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-kk-BIt">
-                                                        <rect key="frame" x="382" y="1" width="71.666666666666686" height="206"/>
+                                                        <rect key="frame" x="382" y="1" width="71.666666666666686" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Dp8-hJ-se7">
-                                                        <rect key="frame" x="458.66666666666663" y="1" width="71.333333333333371" height="206"/>
+                                                        <rect key="frame" x="458.66666666666663" y="1" width="71.333333333333371" height="206.00000000000006"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -365,6 +382,7 @@
                         <outlet property="gKey" destination="z9f-0b-hkN" id="gq3-OI-PkY"/>
                         <outlet property="gSharpKey" destination="SgP-XV-e6h" id="4Kl-hm-zBh"/>
                         <outlet property="oneChordButton" destination="XRh-IU-YEu" id="fWB-Fy-oeF"/>
+                        <outlet property="reverbOff" destination="bs8-Le-Oid" id="kuu-aB-WYe"/>
                         <outlet property="sevenChordButton" destination="BwM-ZC-ovT" id="GIj-gF-39j"/>
                         <outlet property="sixChordButton" destination="lgb-tQ-QBh" id="77S-0U-u6O"/>
                         <outlet property="threeChordButton" destination="cb4-eo-780" id="rj0-v4-Gbm"/>
@@ -382,12 +400,13 @@
         <image name="BlackKey" width="40" height="124"/>
         <image name="BlackKeyHighlighted" width="40" height="124"/>
         <image name="ColoredLogo" width="87" height="87"/>
-        <image name="Key Button" width="87" height="87"/>
-        <image name="Key Button Highlighted" width="87" height="87"/>
         <image name="SmallButtonHighlighed" width="60" height="60"/>
         <image name="SmallButtonNoShadow" width="60" height="60"/>
         <image name="WhiteKey" width="71" height="206"/>
         <image name="WhiteKeyHighlighted" width="71" height="206"/>
+        <namedColor name="Cadet Gray">
+            <color red="0.61568627450980395" green="0.63921568627450975" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Coral Red">
             <color red="1" green="0.25900000333786011" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

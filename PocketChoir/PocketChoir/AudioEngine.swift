@@ -20,7 +20,9 @@ class AudioEngine {
     //var drywet_mix: AKDryWetMixer!
     var output_mix: AKMixer!
     
-    
+    //Reverb Node
+    var reverb: AKCostelloReverb!
+    var currReverbFB: Double = 0
     
     //Harmonizer Nodes
     var freq_tracker: AKFrequencyTracker!
@@ -88,7 +90,10 @@ class AudioEngine {
         harmonizer_mix = AKMixer(shifter1, shifter2, shifter3, shifter4, lead_shifter)
         harmonizer_mix.volume = harmonizer_gain
         //output_mix = AKMixer(input_booster, shifter1, shifter2, shifter3, shifter4)
-        output_mix = AKMixer(input_booster, harmonizer_mix)
+        reverb = AKCostelloReverb(harmonizer_mix)
+        reverb.feedback = 0
+        reverb.cutoffFrequency = 9_900
+        output_mix = AKMixer(input_booster, harmonizer_mix, reverb)
         output_mix.volume = output_gain
         AudioKit.output = output_mix
         
@@ -163,6 +168,7 @@ class AudioEngine {
             shifters[i].shift = (tonic + target_chord[i]) - current_pitch
         }
         lead_shifter.shift = (tonic + target_pitch + 12) - current_pitch
+        reverb.feedback = currReverbFB
     }
     
     func ftom(_ frequency: Double) -> Double {
@@ -175,4 +181,6 @@ class AudioEngine {
         return frequency
     }
     
-}
+    func reverb_fbUpdate(_ val: Double) {
+        currReverbFB = val
+    }}
