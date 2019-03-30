@@ -230,7 +230,7 @@ class ViewController: UIViewController {
     }
     
     @objc func reverbOnPressed() {
-        audioEngine.reverb_fbUpdate(8.2)
+        audioEngine.reverb_fbUpdate(0.85)
     }
     
     @objc func reverbOffPressed() {
