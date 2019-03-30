@@ -350,8 +350,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="aKey" destination="dbP-kk-BIt" id="38n-Nm-XGO"/>
+                        <outlet property="aSharpKey" destination="5Ak-M0-AAb" id="Lho-b8-SGO"/>
+                        <outlet property="bKey" destination="Dp8-hJ-se7" id="Oxa-8s-vwh"/>
+                        <outlet property="cKey" destination="OgT-gk-QkX" id="Z3m-HX-xr2"/>
+                        <outlet property="cSharpKey" destination="ix3-qt-fZ7" id="IfH-36-H9q"/>
+                        <outlet property="dKey" destination="Uca-54-Z8V" id="TNO-VS-XYh"/>
+                        <outlet property="dSharpKey" destination="n9p-Ix-pev" id="1Q8-JV-QoC"/>
+                        <outlet property="eKey" destination="fe0-6C-PUo" id="WMi-a6-LrR"/>
+                        <outlet property="fKey" destination="Uv0-Dp-DZS" id="lLA-yM-Sah"/>
+                        <outlet property="fSharpKey" destination="JAa-kL-Xrc" id="uOl-Dv-CHV"/>
                         <outlet property="fiveChordButton" destination="mkW-LQ-tig" id="9Pd-0V-3om"/>
                         <outlet property="fourChordButton" destination="KA2-wo-4Pw" id="Eed-WX-3Xy"/>
+                        <outlet property="gKey" destination="z9f-0b-hkN" id="gq3-OI-PkY"/>
+                        <outlet property="gSharpKey" destination="SgP-XV-e6h" id="4Kl-hm-zBh"/>
                         <outlet property="oneChordButton" destination="XRh-IU-YEu" id="fWB-Fy-oeF"/>
                         <outlet property="sevenChordButton" destination="BwM-ZC-ovT" id="GIj-gF-39j"/>
                         <outlet property="sixChordButton" destination="lgb-tQ-QBh" id="77S-0U-u6O"/>

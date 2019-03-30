@@ -81,7 +81,11 @@ class AudioEngine {
             shifter.rampDuration = 0.001
         }
         
-        harmonizer_mix = AKMixer(shifter1, shifter2, shifter3, shifter4)
+        lead_shifter.windowSize = 2048
+        lead_shifter.crossfade = 1024
+        lead_shifter.rampDuration = 0.001
+        
+        harmonizer_mix = AKMixer(shifter1, shifter2, shifter3, shifter4, lead_shifter)
         harmonizer_mix.volume = harmonizer_gain
         //output_mix = AKMixer(input_booster, shifter1, shifter2, shifter3, shifter4)
         output_mix = AKMixer(input_booster, harmonizer_mix)
@@ -158,6 +162,7 @@ class AudioEngine {
         for i in 0..<shifters.count {
             shifters[i].shift = (tonic + target_chord[i]) - current_pitch
         }
+        lead_shifter.shift = (tonic + target_pitch + 12) - current_pitch
     }
     
     func ftom(_ frequency: Double) -> Double {
