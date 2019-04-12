@@ -10,9 +10,9 @@ import UIKit
 import AudioKit
 import AudioKitUI
 
-var audioEngine: AudioEngine!
 
-class ViewController: UIViewController {
+
+class ChordViewController: UIViewController {
     
     @IBOutlet weak var oneChordButton: UILabel!
     @IBOutlet weak var twoChordButton: UILabel!
@@ -40,82 +40,82 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        audioEngine = AudioEngine()
+        //audioEngine = AudioEngine()
         
-        let tap1 = UITapGestureRecognizer(target: self, action: #selector(ViewController.oneChordPresssed))
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.oneChordPresssed))
         oneChordButton.isUserInteractionEnabled = true
         oneChordButton.addGestureRecognizer(tap1)
         
-        let tap2 = UITapGestureRecognizer(target: self, action: #selector(ViewController.twoChordPresssed))
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.twoChordPresssed))
         twoChordButton.isUserInteractionEnabled = true
         twoChordButton.addGestureRecognizer(tap2)
         
-        let tap3 = UITapGestureRecognizer(target: self, action: #selector(ViewController.threeChordPresssed))
+        let tap3 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.threeChordPresssed))
         threeChordButton.isUserInteractionEnabled = true
         threeChordButton.addGestureRecognizer(tap3)
         
-        let tap4 = UITapGestureRecognizer(target: self, action: #selector(ViewController.fourChordPresssed))
+        let tap4 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.fourChordPresssed))
         fourChordButton.isUserInteractionEnabled = true
         fourChordButton.addGestureRecognizer(tap4)
         
-        let tap5 = UITapGestureRecognizer(target: self, action: #selector(ViewController.fiveChordPresssed))
+        let tap5 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.fiveChordPresssed))
         fiveChordButton.isUserInteractionEnabled = true
         fiveChordButton.addGestureRecognizer(tap5)
         
-        let tap6 = UITapGestureRecognizer(target: self, action: #selector(ViewController.sixChordPresssed))
+        let tap6 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.sixChordPresssed))
         sixChordButton.isUserInteractionEnabled = true
         sixChordButton.addGestureRecognizer(tap6)
         
-        let tap7 = UITapGestureRecognizer(target: self, action: #selector(ViewController.sevenChordPresssed))
+        let tap7 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.sevenChordPresssed))
         sevenChordButton.isUserInteractionEnabled = true
         sevenChordButton.addGestureRecognizer(tap7)
         
         
-        let cTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.cPressed))
+        let cTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.cPressed))
         cKey.isUserInteractionEnabled = true
         cKey.addGestureRecognizer(cTap)
         
-        let cSharpTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.cSharpPressed))
+        let cSharpTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.cSharpPressed))
         cSharpKey.isUserInteractionEnabled = true
         cSharpKey.addGestureRecognizer(cSharpTap)
         
-        let dTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dPressed))
+        let dTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.dPressed))
         dKey.isUserInteractionEnabled = true
         dKey.addGestureRecognizer(dTap)
         
-        let dSharpTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dSharpPressed))
+        let dSharpTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.dSharpPressed))
         dSharpKey.isUserInteractionEnabled = true
         dSharpKey.addGestureRecognizer(dSharpTap)
         
-        let eTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.ePressed))
+        let eTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.ePressed))
         eKey.isUserInteractionEnabled = true
         eKey.addGestureRecognizer(eTap)
         
-        let fTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.fPressed))
+        let fTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.fPressed))
         fKey.isUserInteractionEnabled = true
         fKey.addGestureRecognizer(fTap)
         
-        let fSharpTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.fSharpPressed))
+        let fSharpTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.fSharpPressed))
         fSharpKey.isUserInteractionEnabled = true
         fSharpKey.addGestureRecognizer(fSharpTap)
         
-        let gTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.gPressed))
+        let gTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.gPressed))
         gKey.isUserInteractionEnabled = true
         gKey.addGestureRecognizer(gTap)
         
-        let gSharpTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.gSharpPressed))
+        let gSharpTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.gSharpPressed))
         gSharpKey.isUserInteractionEnabled = true
         gSharpKey.addGestureRecognizer(gSharpTap)
         
-        let aTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.aPressed))
+        let aTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.aPressed))
         aKey.isUserInteractionEnabled = true
         aKey.addGestureRecognizer(aTap)
         
-        let aSharpTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.aSharpPressed))
+        let aSharpTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.aSharpPressed))
         aSharpKey.isUserInteractionEnabled = true
         aSharpKey.addGestureRecognizer(aSharpTap)
         
-        let bTap = UITapGestureRecognizer(target: self, action: #selector(ViewController.bPressed))
+        let bTap = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.bPressed))
         bKey.isUserInteractionEnabled = true
         bKey.addGestureRecognizer(bTap)
     }
