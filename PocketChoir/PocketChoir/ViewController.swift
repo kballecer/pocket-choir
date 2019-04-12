@@ -14,6 +14,7 @@ var audioEngine: AudioEngine!
 
 class ViewController: UIViewController {
     
+    //Chord button outlets
     @IBOutlet weak var oneChordButton: UILabel!
     @IBOutlet weak var twoChordButton: UILabel!
     @IBOutlet weak var threeChordButton: UILabel!
@@ -22,9 +23,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var sixChordButton: UILabel!
     @IBOutlet weak var sevenChordButton: UILabel!
     
+    //Imageview square button outlets
+    @IBOutlet weak var oneChordImageButton: UIImageView!
+    @IBOutlet weak var twoChordImageButton: UIImageView!
+    @IBOutlet weak var threeChordImageButton: UIImageView!
+    @IBOutlet weak var fourChordImageButton: UIImageView!
+    @IBOutlet weak var fiveChordImageButton: UIImageView!
+    @IBOutlet weak var sixChordImageButton: UIImageView!
+    @IBOutlet weak var sevenChordImageButton: UIImageView!
     
+    //7th & sus square button outlets
+    @IBOutlet weak var majorImageButton: UIImageView!
+    @IBOutlet weak var minorImageButton: UIImageView!
+    @IBOutlet weak var noneImageButton: UIImageView!
+    @IBOutlet weak var fourSusImageButton: UIImageView!
+    @IBOutlet weak var threeSusImageButton: UIImageView!
+    @IBOutlet weak var twoSusImageButton: UIImageView!
+    
+    //Reverb button outlets
     @IBOutlet weak var reverbOn: UIButton!
     @IBOutlet weak var reverbOff: UIButton!
+    
+    //Keyboard key outlets
     @IBOutlet weak var cKey: UIImageView!
     @IBOutlet weak var cSharpKey: UIImageView!
     @IBOutlet weak var dKey: UIImageView!
@@ -136,96 +156,115 @@ class ViewController: UIViewController {
 
     @objc func oneChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(1)
+        oneChordImageButton.isHighlighted = !oneChordImageButton.isHighlighted
         print("1")
     }
     
     @objc func twoChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(2)
+        twoChordImageButton.isHighlighted = !twoChordImageButton.isHighlighted
         print("2")
     }
 
     @objc func threeChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(3)
+        threeChordImageButton.isHighlighted = !threeChordImageButton.isHighlighted
         print("3")
     }
     
     @objc func fourChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(4)
+        fourChordImageButton.isHighlighted = !fourChordImageButton.isHighlighted
         print("4")
     }
     
     @objc func fiveChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(5)
+        fiveChordImageButton.isHighlighted = !fiveChordImageButton.isHighlighted
         print("5")
     }
     
     @objc func sixChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(6)
+        sixChordImageButton.isHighlighted = !sixChordImageButton.isHighlighted
         print("6")
     }
     
     @objc func sevenChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.chord_update(7)
+        sevenChordImageButton.isHighlighted = !sevenChordImageButton.isHighlighted
         print("7")
     }
     
     @objc func cPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(0)
+        cKey.isHighlighted = !cKey.isHighlighted
         print("c")
     }
     
     @objc func cSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(1)
+        cSharpKey.isHighlighted = !cSharpKey.isHighlighted
         print("c#")
     }
     
     @objc func dPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(2)
+        dKey.isHighlighted = !dKey.isHighlighted
         print("d")
     }
     
     @objc func dSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(3)
+        dSharpKey.isHighlighted = !dSharpKey.isHighlighted
         print("d#")
     }
     
     @objc func ePressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(4)
+        eKey.isHighlighted = !eKey.isHighlighted
         print("e")
     }
     
     @objc func fPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(5)
+        fKey.isHighlighted = !fKey.isHighlighted
         print("f")
     }
     
     @objc func fSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(6)
+        fSharpKey.isHighlighted = !fSharpKey.isHighlighted
         print("f#")
     }
     
     @objc func gPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(7)
+        gKey.isHighlighted = !gKey.isHighlighted
         print("g")
     }
     
     @objc func gSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(8)
+        gSharpKey.isHighlighted = !gSharpKey.isHighlighted
         print("g#")
     }
     
     @objc func aPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(9)
+        aKey.isHighlighted = !aKey.isHighlighted
         print("a")
     }
     
     @objc func aSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(10)
+        aSharpKey.isHighlighted = !aSharpKey.isHighlighted
         print("a#")
     }
     
     @objc func bPressed(sender: UITapGestureRecognizer) {
         audioEngine.lead_update(11)
+        bKey.isHighlighted = !bKey.isHighlighted
         print("b")
     }
     
