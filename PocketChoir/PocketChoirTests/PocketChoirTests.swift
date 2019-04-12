@@ -9,11 +9,18 @@
 import XCTest
 @testable import PocketChoir
 
+var audioEngine: AudioEngine!
+
 class PocketChoirTests: XCTestCase {
     
-    override func setUp() {
+    // Called before running all tests, setup code for all tests
+    override class func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        audioEngine = AudioEngine()
+    }
+    
+    override func setUp() {
+            // Setup code for before the invocation of each test method
     }
     
     override func tearDown() {
@@ -21,16 +28,31 @@ class PocketChoirTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testReverbFB() {
+        audioEngine.reverb_fbUpdate(20)
+        XCTAssertEqual(audioEngine.reverb.feedback, 0.2, "reverb_fbUpdate failed to update feedback parameter in reverb node")
     }
     
-    func testPerformanceExample() {
+   func testDelayFB() {
+        audioEngine.delay_fbUpdate(40)
+        XCTAssertEqual(audioEngine.delay.feedback, 0.4, "delay_fbUpdate failed to updtaet feedback parameter in delay node")
+    }
+    
+    func testDelayTime() {
+        audioEngine.delay_timeUpdate(50)
+        XCTAssertEqual(audioEngine.delay.time, 0.5, "delay_timeUpdate failed to update time parameter in delay node")
+    }
+    
+    func testDelayDW() {
+        audioEngine.delay_dwMixUpdate(60)
+        XCTAssertEqual(audioEngine.delay.dryWetMix, 0.6, "delay_dwMixUpdate failed to update d/w parameter in delay node")
+    }
+    
+    /*func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
-    }
+    }*/
     
 }
