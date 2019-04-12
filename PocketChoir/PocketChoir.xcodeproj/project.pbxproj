@@ -95,10 +95,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		520FC62E226077B00099EF62 /* ReverbSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverbSlide.swift; path = ../../../../../Desktop/ReverbSlide.swift; sourceTree = "<group>"; };
-		520FC62F226077B00099EF62 /* ReverbSlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReverbSlide.xib; path = ../../../../../Desktop/ReverbSlide.xib; sourceTree = "<group>"; };
-		520FC630226077B00099EF62 /* DelaySlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelaySlide.swift; path = ../../../../../Desktop/DelaySlide.swift; sourceTree = "<group>"; };
-		520FC631226077B00099EF62 /* DelaySlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelaySlide.xib; path = ../../../../../Desktop/DelaySlide.xib; sourceTree = "<group>"; };
+		520FC62E226077B00099EF62 /* ReverbSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverbSlide.swift; sourceTree = "<group>"; };
+		520FC62F226077B00099EF62 /* ReverbSlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReverbSlide.xib; sourceTree = "<group>"; };
+		520FC630226077B00099EF62 /* DelaySlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelaySlide.swift; sourceTree = "<group>"; };
+		520FC631226077B00099EF62 /* DelaySlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaySlide.xib; sourceTree = "<group>"; };
 		6321B1E622605AAD00300915 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6321B1E822605C7000300915 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		6321B1EA22605F6700300915 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 		6B0F25C22248887B00CA323A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		6B0F25C32248887C00CA323A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		6B0F25C7224888AA00CA323A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		6B30B4EE2260F04F0039F715 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "/Users/deryk/Documents/College/4Senior/SoftwareEngineering/Pocket Choir/GitHub/pocket-choir/PocketChoir/PocketChoir/Fonts/Roboto-Light.ttf"; sourceTree = "<absolute>"; };
+		6B30B4EF2260F04F0039F715 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "/Users/deryk/Documents/College/4Senior/SoftwareEngineering/Pocket Choir/GitHub/pocket-choir/PocketChoir/PocketChoir/Fonts/Roboto-Medium.ttf"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,8 @@
 				6B0F25C22248887B00CA323A /* Montserrat-Bold.ttf */,
 				6B0F25C32248887C00CA323A /* Montserrat-Medium.ttf */,
 				6B0F25C7224888AA00CA323A /* Roboto-Bold.ttf */,
+				6B30B4EE2260F04F0039F715 /* Roboto-Light.ttf */,
+				6B30B4EF2260F04F0039F715 /* Roboto-Medium.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
