@@ -180,44 +180,44 @@
                                 <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-NI-tXd" userLabel="Col1 Buttons">
-                                        <rect key="frame" x="0.0" y="0.0" width="104" height="414"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="414"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="MeJ-aV-Gks">
-                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="22"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="rrn-un-vDs">
-                                                <rect key="frame" x="0.0" y="103" width="104" height="104"/>
+                                                <rect key="frame" x="0.0" y="21" width="43.666666666666664" height="58.333333333333343"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="XJI-uz-mKt">
-                                                <rect key="frame" x="0.0" y="206" width="104" height="104"/>
+                                                <rect key="frame" x="0.0" y="78.333333333333329" width="43.666666666666664" height="58.333333333333329"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="ILc-Bf-upG">
-                                                <rect key="frame" x="0.0" y="309" width="104" height="105"/>
+                                                <rect key="frame" x="0.0" y="135.66666666666666" width="43.666666666666664" height="278.33333333333337"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9sG-nF-pjz" userLabel="Col2 Buttons">
-                                        <rect key="frame" x="103" y="0.0" width="104" height="414"/>
+                                        <rect key="frame" x="42.666666666666657" y="0.0" width="47.333333333333343" height="414"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="w5H-7P-cGm">
-                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47.333333333333336" height="58.333333333333336"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="44J-rw-OBd">
-                                                <rect key="frame" x="0.0" y="103" width="104" height="104"/>
+                                                <rect key="frame" x="0.0" y="57.333333333333329" width="47.333333333333336" height="58.333333333333329"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="jRp-Bk-wD0">
-                                                <rect key="frame" x="0.0" y="206" width="104" height="104"/>
+                                                <rect key="frame" x="0.0" y="114.66666666666667" width="47.333333333333336" height="58.333333333333329"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="BigButtonNoShadow" highlightedImage="BigButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Cwj-Cu-RNz">
-                                                <rect key="frame" x="0.0" y="309" width="104" height="105"/>
+                                                <rect key="frame" x="0.0" y="172" width="47.333333333333336" height="242"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-Yk-ADE" userLabel="Effects/Piano Stack">
-                                        <rect key="frame" x="206" y="0.0" width="530" height="414"/>
+                                        <rect key="frame" x="89" y="0.0" width="647" height="414"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tt5-O3-YEU" userLabel="Effects Stack">
-                                                <rect key="frame" x="0.0" y="0.0" width="530" height="207"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="647" height="207"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs8-Le-Oid">
                                                         <rect key="frame" x="0.0" y="0.0" width="139" height="207"/>
@@ -230,7 +230,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-z1-xxl">
-                                                        <rect key="frame" x="139" y="0.0" width="391" height="207"/>
+                                                        <rect key="frame" x="139" y="0.0" width="508" height="207"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                         <state key="normal" title="Reverb On">
                                                             <color key="titleColor" name="Cadet Gray"/>
@@ -242,28 +242,28 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-aE-maK" userLabel="White Key Stack">
-                                                <rect key="frame" x="0.0" y="207" width="530" height="207"/>
+                                                <rect key="frame" x="0.0" y="207" width="647" height="207"/>
                                                 <subviews>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-gk-QkX">
-                                                        <rect key="frame" x="0.0" y="1" width="71.333333333333329" height="206.00000000000006"/>
+                                                        <rect key="frame" x="0.0" y="1" width="88" height="206"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-54-Z8V">
-                                                        <rect key="frame" x="76.333333333333314" y="1" width="71.666666666666686" height="206.00000000000006"/>
+                                                        <rect key="frame" x="93" y="1" width="88.333333333333314" height="206"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-6C-PUo">
-                                                        <rect key="frame" x="153" y="1" width="71.333333333333314" height="206.00000000000006"/>
+                                                        <rect key="frame" x="186.33333333333331" y="1" width="88" height="206"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Uv0-Dp-DZS">
-                                                        <rect key="frame" x="229.33333333333334" y="1" width="71.333333333333343" height="206.00000000000006"/>
+                                                        <rect key="frame" x="279.33333333333331" y="1" width="88.333333333333314" height="206"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-0b-hkN">
-                                                        <rect key="frame" x="305.66666666666669" y="1" width="71.333333333333314" height="206.00000000000006"/>
+                                                        <rect key="frame" x="372.66666666666669" y="1" width="88" height="206"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-kk-BIt">
-                                                        <rect key="frame" x="382" y="1" width="71.666666666666686" height="206.00000000000006"/>
+                                                        <rect key="frame" x="465.66666666666663" y="1" width="88.333333333333371" height="206"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Dp8-hJ-se7">
-                                                        <rect key="frame" x="458.66666666666663" y="1" width="71.333333333333371" height="206.00000000000006"/>
+                                                        <rect key="frame" x="559" y="1" width="88" height="206"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -288,25 +288,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-Ov-bdh" userLabel="Black Key Stack">
-                                <rect key="frame" x="261" y="208" width="420" height="124"/>
+                                <rect key="frame" x="274.66666666666669" y="208" width="276.00000000000006" height="81.333333333333314"/>
                                 <subviews>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackKey" highlightedImage="BlackKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="ix3-qt-fZ7">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="124"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="81.333333333333329"/>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackKey" highlightedImage="BlackKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="n9p-Ix-pev">
-                                        <rect key="frame" x="76" y="0.0" width="40" height="124"/>
+                                        <rect key="frame" x="52" y="0.0" width="16" height="81.333333333333329"/>
                                     </imageView>
                                     <imageView alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackKey" highlightedImage="BlackKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="pCf-Nu-etj">
-                                        <rect key="frame" x="152" y="0.0" width="40" height="124"/>
+                                        <rect key="frame" x="104" y="0.0" width="16" height="81.333333333333329"/>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackKey" highlightedImage="BlackKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="JAa-kL-Xrc">
-                                        <rect key="frame" x="228" y="0.0" width="40" height="124"/>
+                                        <rect key="frame" x="156" y="0.0" width="16" height="81.333333333333329"/>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" verticalHuggingPriority="251" image="BlackKey" highlightedImage="BlackKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-XV-e6h">
-                                        <rect key="frame" x="304" y="0.0" width="40" height="124"/>
+                                        <rect key="frame" x="208" y="0.0" width="16" height="81.333333333333329"/>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackKey" highlightedImage="BlackKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="5Ak-M0-AAb">
-                                        <rect key="frame" x="380" y="0.0" width="40" height="124"/>
+                                        <rect key="frame" x="259.99999999999994" y="0.0" width="16" height="81.333333333333329"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -316,43 +316,43 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vHN-Tc-hNe" userLabel="Step Stack">
                                 <rect key="frame" x="617" y="0.0" width="119" height="207"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ut7-YC-KBa" userLabel="Col1 Step Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="207"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ut7-YC-KBa" userLabel="Col1 Step Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="207"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="254" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="754" text="7th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g21-Jg-lZb">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="29.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="254" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="754" ambiguous="YES" text="7th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g21-Jg-lZb">
+                                                <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="29.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="25"/>
                                                 <color key="textColor" name="Coral Red"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="jPC-it-wCX">
-                                                <rect key="frame" x="0.0" y="28.333333333333329" width="60" height="60"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="jPC-it-wCX">
+                                                <rect key="frame" x="0.0" y="28.333333333333329" width="40.666666666666664" height="35"/>
                                             </imageView>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="4KZ-YX-G9e">
-                                                <rect key="frame" x="0.0" y="87.333333333333329" width="60" height="60.666666666666671"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" ambiguous="YES" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="4KZ-YX-G9e">
+                                                <rect key="frame" x="0.0" y="62.333333333333336" width="40.666666666666664" height="125.66666666666666"/>
                                             </imageView>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-Zj-M1b">
-                                                <rect key="frame" x="0.0" y="147" width="60" height="60"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-Zj-M1b">
+                                                <rect key="frame" x="0.0" y="187" width="40.666666666666664" height="20"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9eh-aQ-6To" userLabel="Col2 Step Stack">
-                                        <rect key="frame" x="59" y="0.0" width="60" height="207"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9eh-aQ-6To" userLabel="Col2 Step Stack">
+                                        <rect key="frame" x="39.666666666666622" y="0.0" width="79.333333333333314" height="207"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="254" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="754" text="Sus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="En8-bD-aHJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="29.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="254" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="754" ambiguous="YES" text="Sus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="En8-bD-aHJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="29.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="25"/>
                                                 <color key="textColor" name="Gargoyle Gas"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="bf1-ZR-s0i">
-                                                <rect key="frame" x="0.0" y="28.333333333333329" width="60" height="60"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="bf1-ZR-s0i">
+                                                <rect key="frame" x="0.0" y="28.333333333333329" width="79.333333333333329" height="35"/>
                                             </imageView>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="AHN-2H-mnv">
-                                                <rect key="frame" x="0.0" y="87.333333333333329" width="60" height="60.666666666666671"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" ambiguous="YES" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="AHN-2H-mnv">
+                                                <rect key="frame" x="0.0" y="62.333333333333336" width="79.333333333333329" height="110.66666666666666"/>
                                             </imageView>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="Ysg-24-b5w">
-                                                <rect key="frame" x="0.0" y="147" width="60" height="60"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SmallButtonNoShadow" highlightedImage="SmallButtonHighlighed" translatesAutoresizingMaskIntoConstraints="NO" id="Ysg-24-b5w">
+                                                <rect key="frame" x="0.0" y="172" width="79.333333333333329" height="35"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -362,86 +362,86 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6R-x3-xhu" userLabel="Logo Button">
-                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="22"/>
                                 <state key="normal" image="ColoredLogo"/>
                                 <connections>
                                     <segue destination="JDZ-ia-dgQ" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="vgb-wm-YAr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkW-LQ-tig">
-                                <rect key="frame" x="0.0" y="103" width="104" height="104"/>
+                                <rect key="frame" x="0.0" y="21" width="43.666666666666664" height="58.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA2-wo-4Pw">
-                                <rect key="frame" x="0.0" y="206" width="104" height="104"/>
+                                <rect key="frame" x="0.0" y="78.333333333333329" width="43.666666666666664" height="58.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-IU-YEu">
-                                <rect key="frame" x="0.0" y="309" width="104" height="105"/>
+                                <rect key="frame" x="0.0" y="135.66666666666666" width="43.666666666666664" height="278.33333333333337"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vii" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-ZC-ovT">
-                                <rect key="frame" x="103" y="0.0" width="104" height="104"/>
+                                <rect key="frame" x="42.666666666666657" y="0.0" width="47.333333333333343" height="58.333333333333336"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgb-tQ-QBh">
-                                <rect key="frame" x="103" y="103" width="104" height="104"/>
+                                <rect key="frame" x="42.666666666666657" y="57.333333333333329" width="47.333333333333343" height="58.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iii" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-eo-780">
-                                <rect key="frame" x="103" y="206" width="104" height="104"/>
+                                <rect key="frame" x="42.666666666666657" y="114.66666666666667" width="47.333333333333343" height="58.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ii" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5E-Jf-hZL">
-                                <rect key="frame" x="103" y="309" width="104" height="105"/>
+                                <rect key="frame" x="42.666666666666657" y="172" width="47.333333333333343" height="242"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="50"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-4b-XfB">
-                                <rect key="frame" x="676" y="28.333333333333329" width="60" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-4b-XfB">
+                                <rect key="frame" x="676" y="28.333333333333329" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-Z1-CAo">
-                                <rect key="frame" x="676" y="87.333333333333329" width="60" height="60.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-Z1-CAo">
+                                <rect key="frame" x="676" y="62.333333333333336" width="60" height="110.66666666666666"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaY-Hw-Ztm">
-                                <rect key="frame" x="676" y="147" width="60" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaY-Hw-Ztm">
+                                <rect key="frame" x="676" y="172" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LS-v2-PH5">
-                                <rect key="frame" x="617" y="28.333333333333329" width="60" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LS-v2-PH5">
+                                <rect key="frame" x="617" y="28.333333333333329" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVo-ks-XnA">
-                                <rect key="frame" x="617" y="87.333333333333329" width="60" height="60.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVo-ks-XnA">
+                                <rect key="frame" x="617" y="62.333333333333336" width="60" height="125.66666666666666"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-YV-Js8">
-                                <rect key="frame" x="617" y="147" width="60" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="None" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-YV-Js8">
+                                <rect key="frame" x="617" y="187" width="60" height="20"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                 <color key="textColor" name="Lavendar Gray"/>
                                 <nil key="highlightedColor"/>
