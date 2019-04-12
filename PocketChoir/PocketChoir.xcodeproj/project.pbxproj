@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520FC632226077B00099EF62 /* ReverbSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FC62E226077B00099EF62 /* ReverbSlide.swift */; };
+		520FC633226077B00099EF62 /* ReverbSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520FC62F226077B00099EF62 /* ReverbSlide.xib */; };
+		520FC634226077B00099EF62 /* DelaySlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FC630226077B00099EF62 /* DelaySlide.swift */; };
+		520FC635226077B00099EF62 /* DelaySlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520FC631226077B00099EF62 /* DelaySlide.xib */; };
 		6321B1E722605AAD00300915 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321B1E622605AAD00300915 /* PageViewController.swift */; };
 		6321B1E922605C7000300915 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321B1E822605C7000300915 /* AppViewController.swift */; };
 		6321B1EB22605F6700300915 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321B1EA22605F6700300915 /* SampleViewController.swift */; };
@@ -91,6 +95,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		520FC62E226077B00099EF62 /* ReverbSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverbSlide.swift; path = ../../../../../Desktop/ReverbSlide.swift; sourceTree = "<group>"; };
+		520FC62F226077B00099EF62 /* ReverbSlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReverbSlide.xib; path = ../../../../../Desktop/ReverbSlide.xib; sourceTree = "<group>"; };
+		520FC630226077B00099EF62 /* DelaySlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelaySlide.swift; path = ../../../../../Desktop/DelaySlide.swift; sourceTree = "<group>"; };
+		520FC631226077B00099EF62 /* DelaySlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelaySlide.xib; path = ../../../../../Desktop/DelaySlide.xib; sourceTree = "<group>"; };
 		6321B1E622605AAD00300915 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6321B1E822605C7000300915 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		6321B1EA22605F6700300915 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +153,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520FC62A226076320099EF62 /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				520FC630226077B00099EF62 /* DelaySlide.swift */,
+				520FC631226077B00099EF62 /* DelaySlide.xib */,
+				520FC62E226077B00099EF62 /* ReverbSlide.swift */,
+				520FC62F226077B00099EF62 /* ReverbSlide.xib */,
+			);
+			path = Sliders;
+			sourceTree = "<group>";
+		};
 		63AFA7252249ADB3001F0DDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +197,7 @@
 		63DB816622383C0F0012C9B5 /* PocketChoir */ = {
 			isa = PBXGroup;
 			children = (
+				520FC62A226076320099EF62 /* Sliders */,
 				6B0F25C122485DC500CA323A /* PocketChoir.entitlements */,
 				63DB816722383C0F0012C9B5 /* AppDelegate.swift */,
 				63DB816922383C0F0012C9B5 /* ChordViewController.swift */,
@@ -366,12 +386,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520FC633226077B00099EF62 /* ReverbSlide.xib in Resources */,
 				6B0F25C42248887C00CA323A /* Montserrat-Bold.ttf in Resources */,
 				6B0F25C52248887C00CA323A /* Montserrat-Medium.ttf in Resources */,
 				6B0F25C8224888AA00CA323A /* Roboto-Bold.ttf in Resources */,
 				63DB817522383C0F0012C9B5 /* LaunchScreen.storyboard in Resources */,
 				63DB817222383C0F0012C9B5 /* Assets.xcassets in Resources */,
 				63DB816D22383C0F0012C9B5 /* Main.storyboard in Resources */,
+				520FC635226077B00099EF62 /* DelaySlide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520FC634226077B00099EF62 /* DelaySlide.swift in Sources */,
 				6321B1ED2260601C00300915 /* ControlViewController.swift in Sources */,
+				520FC632226077B00099EF62 /* ReverbSlide.swift in Sources */,
 				63DB816A22383C0F0012C9B5 /* ChordViewController.swift in Sources */,
 				635D2492224AC5BA00DCC9A7 /* Harmonizer.swift in Sources */,
 				635D248F2249B25400DCC9A7 /* AudioEngine.swift in Sources */,

@@ -22,9 +22,6 @@ class ChordViewController: UIViewController {
     @IBOutlet weak var sixChordButton: UILabel!
     @IBOutlet weak var sevenChordButton: UILabel!
     
-    
-    @IBOutlet weak var reverbOn: UIButton!
-    @IBOutlet weak var reverbOff: UIButton!
     @IBOutlet weak var cKey: UIImageView!
     @IBOutlet weak var cSharpKey: UIImageView!
     @IBOutlet weak var dKey: UIImageView!
@@ -38,10 +35,14 @@ class ChordViewController: UIViewController {
     @IBOutlet weak var aSharpKey: UIImageView!
     @IBOutlet weak var bKey: UIImageView!
     
+    @IBOutlet weak var effectsScroll: UIScrollView!
+    var effectSlides:[UIView] = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //audioEngine = AudioEngine()
-        
+        effectSlides = createSlides()
+        setupEffectSliders(EffectSlide: effectSlides)
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.oneChordPresssed))
         oneChordButton.isUserInteractionEnabled = true
         oneChordButton.addGestureRecognizer(tap1)
@@ -119,15 +120,6 @@ class ChordViewController: UIViewController {
         bKey.isUserInteractionEnabled = true
         bKey.addGestureRecognizer(bTap)
     }
-    
-    @IBAction func reverbOnTap(_ sender: Any) {
-        reverbOnPressed()
-    }
-    
-    @IBAction func reverbOffTap(_ sender: Any) {
-        reverbOffPressed()
-    }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -229,12 +221,23 @@ class ChordViewController: UIViewController {
         print("b")
     }
     
-    @objc func reverbOnPressed() {
-        audioEngine.reverb_fbUpdate(0.85)
+    func createSlides() -> [UIView] {
+        let slide1:ReverbSlide = Bundle.main.loadNibNamed("ReverbSlide", owner: self, options: nil)?.first as! ReverbSlide
+        
+        let slide2:DelaySlide = Bundle.main.loadNibNamed("DelaySlide", owner: self, options: nil)?.first as! DelaySlide
+        
+        return [slide1, slide2]
     }
     
-    @objc func reverbOffPressed() {
-        audioEngine.reverb_fbUpdate(0)
+    func setupEffectSliders(EffectSlide : [UIView]) {
+        effectsScroll.frame = CGRect(x: 0, y: 0, width: 530, height: 207)
+        effectsScroll.contentSize = CGSize(width: 530 * EffectSlide.count, height: 207)
+        effectsScroll.isPagingEnabled = true
+        
+        for i in 0 ..< EffectSlide.count {
+            EffectSlide[i].frame = CGRect(x: 530 * CGFloat(i), y: 0, width: 530, height: 207)
+            effectsScroll.addSubview(EffectSlide[i])
+        }
     }
 }
 
