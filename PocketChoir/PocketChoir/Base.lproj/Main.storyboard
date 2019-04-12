@@ -164,6 +164,7 @@
                             <constraint firstItem="fV1-41-AXq" firstAttribute="trailing" secondItem="Wda-EP-rAZ" secondAttribute="trailing" constant="20" id="Epi-pd-ebP"/>
                             <constraint firstItem="Wda-EP-rAZ" firstAttribute="centerY" secondItem="l7o-uK-fCm" secondAttribute="centerY" id="JP5-u7-Izg"/>
                             <constraint firstItem="Clx-QB-DWh" firstAttribute="width" secondItem="WuV-Sv-D96" secondAttribute="width" id="KYI-ZH-JbP"/>
+                            <constraint firstItem="Wda-EP-rAZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l7o-uK-fCm" secondAttribute="trailing" constant="8" symbolic="YES" id="KyG-Cb-dkS"/>
                             <constraint firstItem="l7o-uK-fCm" firstAttribute="leading" secondItem="r3E-zQ-b9K" secondAttribute="trailing" constant="5" id="QmO-IN-jn8"/>
                             <constraint firstItem="K5c-Sy-4gN" firstAttribute="leading" secondItem="fV1-41-AXq" secondAttribute="leading" id="Zgx-59-cDY"/>
                             <constraint firstItem="Clx-QB-DWh" firstAttribute="height" secondItem="WuV-Sv-D96" secondAttribute="height" id="eBS-0V-f9a"/>
@@ -214,6 +215,7 @@
                             <constraint firstItem="bob-G1-s9Z" firstAttribute="trailing" secondItem="9ty-qA-WEe" secondAttribute="trailing" constant="20" id="Bzm-vO-lI6"/>
                             <constraint firstItem="T71-ov-FVV" firstAttribute="centerY" secondItem="9Vi-8Q-bJR" secondAttribute="centerY" id="Ku7-Rf-xwO"/>
                             <constraint firstItem="9Vi-8Q-bJR" firstAttribute="top" secondItem="bob-G1-s9Z" secondAttribute="top" constant="15" id="Z0l-LN-JNH"/>
+                            <constraint firstItem="9ty-qA-WEe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T71-ov-FVV" secondAttribute="trailing" constant="8" symbolic="YES" id="gcY-nN-QAP"/>
                             <constraint firstItem="9Vi-8Q-bJR" firstAttribute="leading" secondItem="bob-G1-s9Z" secondAttribute="leading" constant="15" id="jz5-kf-dVJ"/>
                             <constraint firstItem="bob-G1-s9Z" firstAttribute="trailing" secondItem="T71-ov-FVV" secondAttribute="trailing" constant="250" id="pAu-n8-uvD"/>
                         </constraints>
@@ -253,6 +255,7 @@
                         <color key="backgroundColor" name="Outer Space"/>
                         <constraints>
                             <constraint firstItem="5Cl-SB-QwQ" firstAttribute="top" secondItem="z7a-ZA-MO4" secondAttribute="top" constant="15" id="CCq-8y-KfV"/>
+                            <constraint firstItem="SQe-wu-Zg3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VzB-wK-rbP" secondAttribute="trailing" constant="8" symbolic="YES" id="DD5-4D-l2M"/>
                             <constraint firstItem="SQe-wu-Zg3" firstAttribute="centerY" secondItem="VzB-wK-rbP" secondAttribute="centerY" id="OvU-Eg-Zh7"/>
                             <constraint firstItem="z7a-ZA-MO4" firstAttribute="trailing" secondItem="SQe-wu-Zg3" secondAttribute="trailing" constant="20" id="Zhd-6O-fMv"/>
                             <constraint firstItem="VzB-wK-rbP" firstAttribute="centerY" secondItem="5Cl-SB-QwQ" secondAttribute="centerY" id="ly1-88-a1r"/>
@@ -667,7 +670,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="294"/>
                                         <state key="normal" image="Button1"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="w3D-HN-ucG"/>
+                                            <segue destination="QlQ-qw-Bhv" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="Mlc-kv-r9r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-1l-dMq">
