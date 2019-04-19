@@ -32,14 +32,6 @@ class ChordViewController: UIViewController {
     @IBOutlet weak var sixChordImageButton: UIImageView!
     @IBOutlet weak var sevenChordImageButton: UIImageView!
     
-    //7th and sus square button outlets
-    @IBOutlet weak var majorImageButton: UIImageView!
-    @IBOutlet weak var minorImageButton: UIImageView!
-    @IBOutlet weak var noneImageButton: UIImageView!
-    @IBOutlet weak var fourSusImageButton: UIImageView!
-    @IBOutlet weak var threeSusImageButton: UIImageView!
-    @IBOutlet weak var twoSusImageButton: UIImageView!
-    
     //Keyboard key outlets
     @IBOutlet weak var cKey: UIImageView!
     @IBOutlet weak var cSharpKey: UIImageView!
@@ -61,7 +53,9 @@ class ChordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //audioEngine = AudioEngine()
+        if(audioEngine == nil){
+            audioEngine = AudioEngine()
+        }
         effectSlides = createSlides()
         setupEffectSliders(EffectSlide: effectSlides)
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.oneChordPresssed))
@@ -311,7 +305,7 @@ class ChordViewController: UIViewController {
     func setupEffectSliders(EffectSlide : [UIView]) {
         effectsScroll.frame = CGRect(x: 0, y: 0, width: 411, height: 207)
         effectsScroll.contentSize = CGSize(width: 411 * EffectSlide.count, height: 207)
-        effectsScroll.isPagingEnabled = true
+        effectsScroll.isPagingEnabled = false
         
         for i in 0 ..< EffectSlide.count {
             EffectSlide[i].frame = CGRect(x: 411 * CGFloat(i), y: 0, width: 411, height: 207)
