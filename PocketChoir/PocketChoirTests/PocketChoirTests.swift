@@ -48,11 +48,35 @@ class PocketChoirTests: XCTestCase {
         XCTAssertEqual(audioEngine.delay.dryWetMix, 0.6, "delay_dwMixUpdate failed to update d/w parameter in delay node")
     }
     
-    /*func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testLeadChanges() {
+        for i in 0...12 {
+            audioEngine.lead_update(Double(i))
+            XCTAssertEqual(Double(i), audioEngine.target_pitch.value(), "Target pitch incorrect")
         }
-    }*/
+    }
+    
+    func testChordChanges() {
+        audioEngine.chord_update(1)
+        XCTAssertEqual(audioEngine.one_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+        audioEngine.chord_update(2)
+        XCTAssertEqual(audioEngine.two_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+        audioEngine.chord_update(3)
+        XCTAssertEqual(audioEngine.three_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+        audioEngine.chord_update(4)
+        XCTAssertEqual(audioEngine.four_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+        audioEngine.chord_update(5)
+        XCTAssertEqual(audioEngine.five_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+        audioEngine.chord_update(6)
+        XCTAssertEqual(audioEngine.six_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+        audioEngine.chord_update(7)
+        XCTAssertEqual(audioEngine.seven_chord, audioEngine.target_chord, "Target chord incorrect")
+        
+    }
     
 }
