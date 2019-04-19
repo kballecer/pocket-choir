@@ -9,15 +9,16 @@
 import Foundation
 import AudioKit
 
-class Harmonizer: AKNode {
-
-    var freq_tracker: AKFrequencyTracker!
+class Harmonizer: AKNode, AKInput {
+    
+    var freq_tracker: AKFrequencyTracker = AKFrequencyTracker()
     var shifter1: AKPitchShifter!
     var shifter2: AKPitchShifter!
     var shifter3: AKPitchShifter!
     var shifter4: AKPitchShifter!
     var shifters: [AKPitchShifter]!
     var lead_shifter: AKPitchShifter!
+    var output_mix: AKMixer!
     
     var shift1: Double = 0
     var shift2: Double = 0
@@ -25,21 +26,12 @@ class Harmonizer: AKNode {
     var shift4: Double = 0
     var lead_shift: Double = 0
     
-    var current_note: Double = 60
-    
-    var lead_note: Double = 0
-    var tonic: Double
-//    var one: Double = 0
-//    var two: Double = 2
-//    var three: Double = 4
-//    var four: Double = 6
-//    var five: Double = 7
-//    var six: Double = 9
-//    var seven: Double = 11
-//    var eight: Double = 12
-    
-    var chord_degree: Double
-    var current_chord: [Double]
+    var current_pitch: Double = 60
+    var target_pitch: Double = 60
+    var lead_note: Double = 60
+    var tonic: Double = 60
+
+    var target_chord: [Double]
     let one_chord: [Double] = [-12, 0, 4, 7]
     let two_chord: [Double] = [-10, 2, 5, 9]
     let three_chord: [Double] = [-8, 4, 7, 11]
@@ -50,50 +42,63 @@ class Harmonizer: AKNode {
     let eight_chord: [Double] = [0, 12, 16, 19]
     
     
+    var inputNode: AVAudioNode {
+        return freq_tracker.avAudioNode
+    }
+    
     init(_ input: AKNode) {
         
-        freq_tracker = AKFrequencyTracker(input)
+        input.connect(to: freq_tracker)
         
-        chord_degree = 1
-        current_chord = one_chord
+        target_chord = one_chord
         shifter1 = AKPitchShifter(freq_tracker)
-//        shifter2 = AKPitchShifter(input)
-//        shifter3 = AKPitchShifter(input)
-//        shifter4 = AKPitchShifter(input)
-//        shifters = [shifter1, shifter2, shifter3, shifter4]
-//        lead_shifter = AKPitchShifter(input)
-        tonic = 60.0
+        shifter2 = AKPitchShifter(freq_tracker)
+        shifter3 = AKPitchShifter(freq_tracker)
+        shifter4 = AKPitchShifter(freq_tracker)
+        shifters = [shifter1, shifter2, shifter3, shifter4]
+        lead_shifter = AKPitchShifter(freq_tracker)
         
+        for shifter in shifters {
+            shifter.windowSize = 2048
+            shifter.crossfade = 1024
+            shifter.rampDuration = 0.001
+        }
+        lead_shifter.windowSize = 2048
+        lead_shifter.crossfade = 1024
+        lead_shifter.rampDuration = 0.001
+        
+        output_mix = AKMixer(shifter1, shifter2, shifter3, shifter4, lead_shifter)
+        output_mix.volume = 1.0
         
         super.init()
-        setOutput(to: shifter1)
+        self.avAudioNode = output_mix.avAudioNode
     }
     
     func chord_update(_ chord_pressed: Double) {
         switch chord_pressed {
         case 1:
-            current_chord = one_chord
+            target_chord = one_chord
             break
         case 2:
-            current_chord = two_chord
+            target_chord = two_chord
             break
         case 3:
-            current_chord = three_chord
+            target_chord = three_chord
             break
         case 4:
-            current_chord = four_chord
+            target_chord = four_chord
             break
         case 5:
-            current_chord = five_chord
+            target_chord = five_chord
             break
         case 6:
-            current_chord = six_chord
+            target_chord = six_chord
             break
         case 7:
-            current_chord = seven_chord
+            target_chord = seven_chord
             break
         case 8:
-            current_chord = eight_chord
+            target_chord = eight_chord
             break
         default:
             print("problem in chord switch")
@@ -101,22 +106,16 @@ class Harmonizer: AKNode {
         }
     }
     
+    func lead_update(_ key_pressed: Double) {
+        target_pitch = key_pressed
+    }
+    
     func update() {
-        //current_note = ftom(freq_tracker.frequency)
-        
-        
-        
-        shift1 = (tonic + current_chord[0]) - current_note
-        shift2 = (tonic + current_chord[1]) - current_note
-        shift3 = (tonic + current_chord[2]) - current_note
-        shift4 = (tonic + current_chord[3]) - current_note
-        lead_shift = (tonic + lead_note) - current_note
-        
-        shifter1.shift = shift1
-//        shifter2.shift = shift2
-//        shifter3.shift = shift3
-//        shifter4.shift = shift4
-//        lead_shifter.shift = lead_shift
+        current_pitch = ftom(freq_tracker.frequency)
+        for i in 0..<shifters.count {
+            shifters[i].shift = (tonic + target_chord[i]) - current_pitch
+        }
+        lead_shifter.shift = (tonic + target_pitch + 12) - current_pitch
     }
 
     func ftom(_ frequency: Double) -> Double {
