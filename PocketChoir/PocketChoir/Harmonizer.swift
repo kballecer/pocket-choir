@@ -127,4 +127,18 @@ class Harmonizer: AKNode, AKInput {
         let frequency: Double = 440 * pow(2, (midiNote - 69)/12)
         return frequency
     }
+    
+    func setWindowSize(_ window_size: Double) {
+        for shifter in shifters {
+            shifter.windowSize = window_size
+        }
+        lead_shifter.windowSize = window_size
+    }
+    
+    func setCrossfade(_ crossfade: Double) {
+        for shifter in shifters {
+            shifter.windowSize = crossfade
+        }
+        lead_shifter.windowSize = crossfade
+    }
 }

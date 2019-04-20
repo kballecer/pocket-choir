@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChordViewController.swift
 //  PocketChoir
 //
 //  Created by David on 3/12/19.
@@ -163,6 +163,7 @@ class ChordViewController: UIViewController {
 
     @objc func oneChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(1)
+        audioEngine.sampler.harmonizer.chord_update(1)
         clearChordHighlights()
         oneChordImageButton.isHighlighted = true
         print("1")
@@ -170,6 +171,7 @@ class ChordViewController: UIViewController {
     
     @objc func twoChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(2)
+        audioEngine.sampler.harmonizer.chord_update(2)
         clearChordHighlights()
         twoChordImageButton.isHighlighted = true
         print("2")
@@ -177,6 +179,7 @@ class ChordViewController: UIViewController {
 
     @objc func threeChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(3)
+        audioEngine.sampler.harmonizer.chord_update(3)
         clearChordHighlights()
         threeChordImageButton.isHighlighted = true
         print("3")
@@ -184,6 +187,7 @@ class ChordViewController: UIViewController {
     
     @objc func fourChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(4)
+        audioEngine.sampler.harmonizer.chord_update(4)
         clearChordHighlights()
         fourChordImageButton.isHighlighted = true
         print("4")
@@ -191,6 +195,7 @@ class ChordViewController: UIViewController {
     
     @objc func fiveChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(5)
+        audioEngine.sampler.harmonizer.chord_update(5)
         clearChordHighlights()
         fiveChordImageButton.isHighlighted = true
         print("5")
@@ -198,6 +203,7 @@ class ChordViewController: UIViewController {
     
     @objc func sixChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(6)
+        audioEngine.sampler.harmonizer.chord_update(6)
         clearChordHighlights()
         sixChordImageButton.isHighlighted = true
         print("6")
@@ -205,6 +211,7 @@ class ChordViewController: UIViewController {
     
     @objc func sevenChordPresssed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.chord_update(7)
+        audioEngine.sampler.harmonizer.chord_update(7)
         clearChordHighlights()
         sevenChordImageButton.isHighlighted = true
         print("7")
@@ -212,6 +219,7 @@ class ChordViewController: UIViewController {
     
     @objc func cPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(0)
+        audioEngine.sampler.harmonizer.lead_update(0)
         clearKeyHighlights()
         cKey.isHighlighted = true
         print("c")
@@ -219,6 +227,7 @@ class ChordViewController: UIViewController {
     
     @objc func cSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(1)
+        audioEngine.sampler.harmonizer.lead_update(1)
         clearKeyHighlights()
         cSharpKey.isHighlighted = true
         print("c#")
@@ -226,6 +235,7 @@ class ChordViewController: UIViewController {
     
     @objc func dPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(2)
+        audioEngine.sampler.harmonizer.lead_update(2)
         clearKeyHighlights()
         dKey.isHighlighted = true
         print("d")
@@ -233,6 +243,7 @@ class ChordViewController: UIViewController {
     
     @objc func dSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(3)
+        audioEngine.sampler.harmonizer.lead_update(3)
         clearKeyHighlights()
         dSharpKey.isHighlighted = true
         print("d#")
@@ -240,6 +251,7 @@ class ChordViewController: UIViewController {
     
     @objc func ePressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(4)
+        audioEngine.sampler.harmonizer.lead_update(4)
         clearKeyHighlights()
         eKey.isHighlighted = true
         print("e")
@@ -247,6 +259,7 @@ class ChordViewController: UIViewController {
     
     @objc func fPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(5)
+        audioEngine.sampler.harmonizer.lead_update(5)
         clearKeyHighlights()
         fKey.isHighlighted = true
         print("f")
@@ -254,6 +267,7 @@ class ChordViewController: UIViewController {
     
     @objc func fSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(6)
+        audioEngine.sampler.harmonizer.lead_update(6)
         clearKeyHighlights()
         fSharpKey.isHighlighted = true
         print("f#")
@@ -261,6 +275,7 @@ class ChordViewController: UIViewController {
     
     @objc func gPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(7)
+        audioEngine.sampler.harmonizer.lead_update(7)
         clearKeyHighlights()
         gKey.isHighlighted = true
         print("g")
@@ -268,6 +283,7 @@ class ChordViewController: UIViewController {
     
     @objc func gSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(8)
+        audioEngine.sampler.harmonizer.lead_update(8)
         clearKeyHighlights()
         gSharpKey.isHighlighted = true
         print("g#")
@@ -275,6 +291,7 @@ class ChordViewController: UIViewController {
     
     @objc func aPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(9)
+        audioEngine.sampler.harmonizer.lead_update(9)
         clearKeyHighlights()
         aKey.isHighlighted = true
         print("a")
@@ -282,6 +299,7 @@ class ChordViewController: UIViewController {
     
     @objc func aSharpPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(10)
+        audioEngine.sampler.harmonizer.lead_update(10)
         clearKeyHighlights()
         aSharpKey.isHighlighted = true
         print("a#")
@@ -289,6 +307,7 @@ class ChordViewController: UIViewController {
     
     @objc func bPressed(sender: UITapGestureRecognizer) {
         audioEngine.harmonizer.lead_update(11)
+        audioEngine.sampler.harmonizer.lead_update(11)
         clearKeyHighlights()
         bKey.isHighlighted = true
         print("b")

@@ -22,19 +22,21 @@ class Sampler: AKNode {
     
     init(_ input: AKNode) {
         
-        
+        recording = false
+        playing = false
         
         AKAudioFile.cleanTempDirectory()
         
         recorder = try? AKNodeRecorder(node: input)
-        
+
         if let file = recorder.audioFile {
             sample_player = try? AKAudioPlayer(file: file)
         }
+        sample_player.looping = true
         
         harmonizer = Harmonizer(sample_player)
         
-        sample_player.looping = true
+        
         
         super.init()
         self.avAudioNode = harmonizer.avAudioNode

@@ -30,11 +30,27 @@ class AudioEngine {
     
     init() {
         
+        //AKSettings initializers
+        AKSettings.bufferLength = .medium
+        
+        do {
+            try AKSettings.setSession(category: .playAndRecord, with: .allowBluetoothA2DP)
+        } catch {
+            AKLog("could not set session category")
+        }
+        
+        AKSettings.defaultToSpeaker = true
+        AKSettings.audioInputEnabled = true
+        AKSettings.useBluetooth = true
+
+        //Signal Chain
         input_signal = AKMicrophone()
         input_booster = AKBooster(input_signal)
         input_booster.gain = 1.0
         harmonizer = Harmonizer(input_booster)
+        harmonizer_booster = AKBooster(harmonizer)
         sampler = Sampler(input_booster)
+        sample_booster = AKBooster(sampler)
 
         reverb = AKCostelloReverb(harmonizer)
         reverb.feedback = 0
@@ -49,25 +65,14 @@ class AudioEngine {
         output_mix.volume = 1.0
         AudioKit.output = output_mix
         
-        //AKSettings initializers
-        AKSettings.bufferLength = .medium
-        
-        do {
-            try AKSettings.setSession(category: .playAndRecord, with: .allowBluetoothA2DP)
-        } catch {
-            AKLog("could not set session category")
-        }
-        
-        AKSettings.defaultToSpeaker = true
-        AKSettings.audioInputEnabled = true
-        AKSettings.useBluetooth = true
-
+        //Starting AudioKit
         do {
             try AudioKit.start()
         } catch {
             AKLog("AudioKit did not start!")
         }
         
+        //Update timer
         Timer.scheduledTimer(timeInterval: 0.0000001, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
     }
     

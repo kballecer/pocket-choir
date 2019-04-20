@@ -22,6 +22,8 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        audioEngine = AudioEngine()
+        
         dataSource = self
         delegate = self
         
@@ -30,10 +32,6 @@ class PageViewController: UIPageViewController {
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
-        
-        
-        audioEngine = AudioEngine()
-        
     }
     
     private func newViewController(id: String) -> UIViewController {
