@@ -322,12 +322,14 @@ class ChordViewController: UIViewController {
     }
     
     func setupEffectSliders(EffectSlide : [UIView]) {
-        effectsScroll.frame = CGRect(x: 0, y: 0, width: 411, height: 207)
-        effectsScroll.contentSize = CGSize(width: 411 * EffectSlide.count, height: 207)
-        effectsScroll.isPagingEnabled = false
+        let width = effectsScroll.frame.width
+        let height = effectsScroll.frame.height
+        effectsScroll.contentSize = CGSize(width: width * CGFloat(EffectSlide.count), height: height)
+        effectsScroll.isPagingEnabled = true
         
         for i in 0 ..< EffectSlide.count {
-            EffectSlide[i].frame = CGRect(x: 411 * CGFloat(i), y: 0, width: 411, height: 207)
+            // center each page in the middle of the scroll view
+            EffectSlide[i].center = CGPoint(x: width * (CGFloat(i)+0.5), y: 0.5*height)
             effectsScroll.addSubview(EffectSlide[i])
         }
     }
