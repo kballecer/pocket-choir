@@ -48,7 +48,7 @@ class PocketChoirTests: XCTestCase {
         XCTAssertEqual(audioEngine.delay.dryWetMix, 0.6, "delay_dwMixUpdate failed to update d/w parameter in delay node")
     }
     
-    func testLeadChanges() {
+    /*func testLeadChanges() {
         for i in 0...12 {
             audioEngine.lead_update(Double(i))
             XCTAssertEqual(Double(i), audioEngine.target_pitch.value(), "Target pitch incorrect")
@@ -77,6 +77,6 @@ class PocketChoirTests: XCTestCase {
         audioEngine.chord_update(7)
         XCTAssertEqual(audioEngine.seven_chord, audioEngine.target_chord, "Target chord incorrect")
         
-    }
+    }*/
     
 }
