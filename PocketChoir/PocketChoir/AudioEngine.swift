@@ -14,9 +14,9 @@ class AudioEngine {
     var input_signal: AKMicrophone!
     var input_booster: AKBooster!
     var harmonizer: Harmonizer!
-    var harmonizer_booster: AKBooster!
-    var sampler: Sampler!
-    var sample_booster: AKBooster!
+    var wet_booster: AKBooster!
+    var dry_booster: AKBooster!
+    var wet_dry_mix: AKMixer!
     var output_mix: AKMixer!
     
     //Reverb Node
@@ -46,24 +46,30 @@ class AudioEngine {
         //Signal Chain
         input_signal = AKMicrophone()
         input_booster = AKBooster(input_signal)
-        input_booster.gain = 1.0
+        
         harmonizer = Harmonizer(input_booster)
-        harmonizer_booster = AKBooster(harmonizer)
-        sampler = Sampler(input_booster)
-        sample_booster = AKBooster(sampler)
+        wet_booster = AKBooster(harmonizer)
+        dry_booster = AKBooster(input_booster)
+        wet_dry_mix = AKMixer(wet_booster, dry_booster)
 
-        reverb = AKCostelloReverb(harmonizer)
-        reverb.feedback = 0
-        reverb.cutoffFrequency = 9_900
-        reverb.stop()
-        delay = AKDelay(reverb)
+        delay = AKDelay(wet_dry_mix)
         delay.time = 0
         delay.feedback = 0
         delay.dryWetMix = 0
         delay.stop()
-        output_mix = AKMixer(harmonizer, sampler)
-        output_mix.volume = 1.0
+        reverb = AKCostelloReverb(delay)
+        reverb.feedback = 0
+        reverb.cutoffFrequency = 9_900
+        reverb.stop()
+        
+        output_mix = AKMixer(reverb)
         AudioKit.output = output_mix
+        
+        input_booster.gain = 0.0
+        wet_booster.gain = 0.0
+        dry_booster.gain = 0.0
+        wet_dry_mix.volume = 1.0
+        output_mix.volume = 0.0
         
         //Starting AudioKit
         do {
