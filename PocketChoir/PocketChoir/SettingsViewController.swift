@@ -11,7 +11,6 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     @IBOutlet weak var inputVolumeSlider: UISlider!
-    @IBOutlet weak var sampleVolumeSlider: UISlider!
     @IBOutlet weak var wetVolumeSlider: UISlider!
     @IBOutlet weak var dryVolumeSlider: UISlider!
     @IBOutlet weak var outputVolumeSlider: UISlider!
@@ -23,6 +22,14 @@ class SettingsViewController: UIViewController {
         if(audioEngine == nil){
             audioEngine = AudioEngine()
         }
+        
+        inputVolumeSlider.value = Float(audioEngine.input_booster.gain)
+        wetVolumeSlider.value = Float(audioEngine.wet_booster.gain)
+        dryVolumeSlider.value = Float(audioEngine.dry_booster.gain)
+        outputVolumeSlider.value = Float(audioEngine.output_mix.volume)
+        tonicNoteSlider.value = Float(audioEngine.harmonizer.tonic)
+        windowSizeSlider.value = Float(audioEngine.harmonizer.shifter1.windowSize)
+        crossfadeSlider.value = Float(audioEngine.harmonizer.shifter1.crossfade)
     }
     
     @IBAction func inputSliderChanged(_ sender: UISlider) {

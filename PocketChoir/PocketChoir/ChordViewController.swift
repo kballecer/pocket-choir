@@ -58,6 +58,8 @@ class ChordViewController: UIViewController {
         }
         effectSlides = createSlides()
         setupEffectSliders(EffectSlide: effectSlides)
+        
+        
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(ChordViewController.oneChordPresssed))
         oneChordButton.isUserInteractionEnabled = true
         oneChordButton.addGestureRecognizer(tap1)
@@ -299,6 +301,14 @@ class ChordViewController: UIViewController {
         
         let slide2:DelaySlide = Bundle.main.loadNibNamed("DelaySlide", owner: self, options: nil)?.first as! DelaySlide
         
+        slide1.feedback.value = 100*Float(audioEngine.reverb.feedback)
+        slide1.toggle.isOn = audioEngine.reverbOn
+        
+        slide2.timeSlider.value = 100*Float(audioEngine.delay.time)
+        slide2.fbSlider.value = 100*Float(audioEngine.delay.feedback)
+        slide2.dwSlider.value = 100*Float(audioEngine.delay.dryWetMix)
+        slide2.toggle.isOn = audioEngine.delayOn
+        
         return [slide1, slide2]
     }
     
@@ -311,6 +321,8 @@ class ChordViewController: UIViewController {
             EffectSlide[i].frame = CGRect(x: 411 * CGFloat(i), y: 0, width: 411, height: 207)
             effectsScroll.addSubview(EffectSlide[i])
         }
+        
+        
     }
 }
 
