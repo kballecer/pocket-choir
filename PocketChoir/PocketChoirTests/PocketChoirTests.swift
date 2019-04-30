@@ -10,6 +10,7 @@ import XCTest
 @testable import PocketChoir
 
 var audioEngine: AudioEngine!
+var harm: Harmonizer!
 
 class PocketChoirTests: XCTestCase {
     
@@ -17,6 +18,7 @@ class PocketChoirTests: XCTestCase {
     override class func setUp() {
         super.setUp()
         audioEngine = AudioEngine()
+        harm = audioEngine.harmonizer
     }
     
     override func setUp() {
@@ -50,32 +52,32 @@ class PocketChoirTests: XCTestCase {
     
     func testLeadChanges() {
         for i in 0...12 {
-            audioEngine.lead_update(Double(i))
-            XCTAssertEqual(Double(i), audioEngine.target_pitch.value(), "Target pitch incorrect")
+            audioEngine.harmonizer.lead_update(Double(i))
+            XCTAssertEqual(Double(i), harm.target_pitch.value(), "Target pitch incorrect")
         }
     }
     
     func testChordChanges() {
-        audioEngine.chord_update(1)
-        XCTAssertEqual(audioEngine.one_chord, audioEngine.target_chord, "Target chord incorrect")
+        harm.chord_update(1)
+        XCTAssertEqual(harm.one_chord, harm.target_chord, "Target chord incorrect")
         
-        audioEngine.chord_update(2)
-        XCTAssertEqual(audioEngine.two_chord, audioEngine.target_chord, "Target chord incorrect")
+        audioEngine.harmonizer.chord_update(2)
+        XCTAssertEqual(harm.two_chord, harm.target_chord, "Target chord incorrect")
         
-        audioEngine.chord_update(3)
-        XCTAssertEqual(audioEngine.three_chord, audioEngine.target_chord, "Target chord incorrect")
+        harm.chord_update(3)
+        XCTAssertEqual(harm.three_chord, harm.target_chord, "Target chord incorrect")
         
-        audioEngine.chord_update(4)
-        XCTAssertEqual(audioEngine.four_chord, audioEngine.target_chord, "Target chord incorrect")
+        harm.chord_update(4)
+        XCTAssertEqual(harm.four_chord, harm.target_chord, "Target chord incorrect")
         
-        audioEngine.chord_update(5)
-        XCTAssertEqual(audioEngine.five_chord, audioEngine.target_chord, "Target chord incorrect")
+        harm.chord_update(5)
+        XCTAssertEqual(harm.five_chord, harm.target_chord, "Target chord incorrect")
         
-        audioEngine.chord_update(6)
-        XCTAssertEqual(audioEngine.six_chord, audioEngine.target_chord, "Target chord incorrect")
+        harm.chord_update(6)
+        XCTAssertEqual(harm.six_chord, harm.target_chord, "Target chord incorrect")
         
-        audioEngine.chord_update(7)
-        XCTAssertEqual(audioEngine.seven_chord, audioEngine.target_chord, "Target chord incorrect")
+        harm.chord_update(7)
+        XCTAssertEqual(harm.seven_chord, harm.target_chord, "Target chord incorrect")
         
     }
     
