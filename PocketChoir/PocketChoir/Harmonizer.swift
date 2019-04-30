@@ -29,7 +29,7 @@ class Harmonizer: AKNode, AKInput {
     var current_pitch: Double = 60
     var target_pitch: Double = 60
     var lead_note: Double = 60
-    var tonic: Double = 60
+    var tonic: Double = 48
 
     var target_chord: [Double]
     let one_chord: [Double] = [-12, 0, 4, 7]
@@ -67,11 +67,13 @@ class Harmonizer: AKNode, AKInput {
         lead_shifter.crossfade = 1024
         lead_shifter.rampDuration = 0.001
         
+        
         output_mix = AKMixer(shifter1, shifter2, shifter3, shifter4, lead_shifter)
         output_mix.volume = 1.0
         
         super.init()
         self.avAudioNode = output_mix.avAudioNode
+        lead_update(1)
     }
     
     func chord_update(_ chord_pressed: Double) {
