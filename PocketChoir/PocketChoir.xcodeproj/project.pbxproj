@@ -101,7 +101,7 @@
 		520FC62F226077B00099EF62 /* ReverbSlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReverbSlide.xib; sourceTree = "<group>"; };
 		520FC630226077B00099EF62 /* DelaySlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelaySlide.swift; sourceTree = "<group>"; };
 		520FC631226077B00099EF62 /* DelaySlide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaySlide.xib; sourceTree = "<group>"; };
-		5261CF602278EF5A0012EC91 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "../../../../Downloads/pocket-choir-master/PocketChoir/PocketChoir/SettingsViewController.swift"; sourceTree = "<group>"; };
+		5261CF602278EF5A0012EC91 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6321B1E622605AAD00300915 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6321B1E822605C7000300915 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		6321B1EA22605F6700300915 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };

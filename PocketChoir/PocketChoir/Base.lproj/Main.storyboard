@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJ5-2v-PLX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJ5-2v-PLX">
     <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,20 +52,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAk-FM-3H9">
-                                                <rect key="frame" x="20" y="44.000000000000007" width="696" height="116.66666666666669"/>
+                                                <rect key="frame" x="20" y="43.999999999999993" width="696" height="117.33333333333331"/>
                                                 <string key="text">Pocket Choir is a harmonizer made for musicians. It uses the audio from your device's built-in microphone to pitch shift your voice to the chord you desire. It can also create a harmony of two or more notes, which can be selected on the keyboard in the harmonizer view. There are also various effects such as reverb and delay that you may configure.</string>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="20"/>
                                                 <color key="textColor" name="Antiflash White"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U9-VN-HXY">
-                                                <rect key="frame" x="20" y="168.33333333333334" width="696" height="36"/>
+                                                <rect key="frame" x="20" y="169" width="696" height="36"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
                                                 <color key="textColor" name="Antiflash White"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2q-CL-ngz">
-                                                <rect key="frame" x="20" y="212.33333333333329" width="696" height="116.66666666666666"/>
+                                                <rect key="frame" x="20" y="213.00000000000003" width="696" height="117.33333333333334"/>
                                                 <string key="text">• Pitch shifting
 • Reverb
 • Delay
@@ -76,13 +76,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-uF-Lda">
-                                                <rect key="frame" x="20" y="337" width="696" height="36"/>
+                                                <rect key="frame" x="20" y="338.33333333333331" width="696" height="36"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
                                                 <color key="textColor" name="Antiflash White"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="to0-vS-0L0">
-                                                <rect key="frame" x="20" y="381" width="696" height="256.33333333333326"/>
+                                                <rect key="frame" x="20" y="382.33333333333331" width="696" height="257.99999999999994"/>
                                                 <string key="text">This project was created for a Software Engineering course at UW-Madison by:
 • Chris Sullivan
 • David Kunstmann
@@ -422,25 +422,25 @@
                                                 <rect key="frame" x="0.0" y="207" width="528" height="207"/>
                                                 <subviews>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-gk-QkX">
-                                                        <rect key="frame" x="0.0" y="1" width="71" height="206"/>
+                                                        <rect key="frame" x="0.0" y="1" width="71" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-54-Z8V">
-                                                        <rect key="frame" x="76" y="1" width="71.333333333333314" height="206"/>
+                                                        <rect key="frame" x="76" y="1" width="71.333333333333314" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-6C-PUo">
-                                                        <rect key="frame" x="152.33333333333331" y="1" width="71" height="206"/>
+                                                        <rect key="frame" x="152.33333333333331" y="1" width="71" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Uv0-Dp-DZS">
-                                                        <rect key="frame" x="228.33333333333334" y="1" width="71.333333333333343" height="206"/>
+                                                        <rect key="frame" x="228.33333333333334" y="1" width="71.333333333333343" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-0b-hkN">
-                                                        <rect key="frame" x="304.66666666666663" y="1" width="71" height="206"/>
+                                                        <rect key="frame" x="304.66666666666663" y="1" width="71" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-kk-BIt">
-                                                        <rect key="frame" x="380.66666666666663" y="1" width="71.333333333333314" height="206"/>
+                                                        <rect key="frame" x="380.66666666666663" y="1" width="71.333333333333314" height="206.00000000000006"/>
                                                     </imageView>
                                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteKey" highlightedImage="WhiteKeyHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Dp8-hJ-se7">
-                                                        <rect key="frame" x="457" y="1" width="71" height="206"/>
+                                                        <rect key="frame" x="457" y="1" width="71" height="206.00000000000006"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -658,25 +658,25 @@
                                             <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="WOa-dt-aBL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-1l-dMq">
-                                        <rect key="frame" x="154" y="0.0" width="154" height="294"/>
-                                        <state key="normal" image="Button2"/>
-                                        <connections>
-                                            <segue destination="cDe-wR-cte" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="tcp-LC-hmN"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iL-by-SBd">
-                                        <rect key="frame" x="308" y="0.0" width="154" height="294"/>
+                                        <rect key="frame" x="154" y="0.0" width="154" height="294"/>
                                         <state key="normal" image="Button3"/>
                                         <connections>
                                             <segue destination="BSM-r0-HrU" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="nXR-wV-Fag"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtT-Ih-eeg">
-                                        <rect key="frame" x="462" y="0.0" width="154" height="294"/>
+                                        <rect key="frame" x="308" y="0.0" width="154" height="294"/>
                                         <state key="normal" image="Button4"/>
                                         <connections>
                                             <segue destination="ZZv-Uq-PEH" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="EWU-69-i0Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-1l-dMq">
+                                        <rect key="frame" x="462" y="0.0" width="154" height="294"/>
+                                        <state key="normal" image="Button2"/>
+                                        <connections>
+                                            <segue destination="cDe-wR-cte" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="tcp-LC-hmN"/>
                                         </connections>
                                     </button>
                                 </subviews>
